@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mirissa Wave Co.</title>
+
+    <!-- Flatpickr CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"/>
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-left">
+                <img src="images/logo.png" alt="Logo" class="nav-logo" />
+                <span class="nav-title">Mirissa Wave Co.</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#activities">Activities</a></li>
+                <li><a href="#booking">Book Now</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#shop">Shop</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="home animate" id="home">
+        <div class="home-container">
+            <!-- Left half: text -->
+            <div class="home-text">
+                <h1>Welcome to Mirissa Wave Co.</h1>
+                <p>Unforgettable aquatic adventures in the heart of Sri Lanka!</p>
+                <a href="#booking" class="btn">Book Now</a>
+            </div>
+
+            <!-- Right half: logo -->
+            <div class="home-image">
+                <img src="images/logo.png" alt="Mirissa Wave Logo" />
+            </div>
+        </div>
+    </header>
+
+    <!-- Activities Section -->
+    <section id="activities" class="section animate">
+        <h2>Our Activities</h2>
+        <p>Join us for surfing, jet skiing, banana boat rides, paddleboard yoga, and more!</p>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="booking" class="section bg-secondary animate">
+        <h2>Book Your Adventure</h2>
+        <form class="booking-form">
+            <input type="text" placeholder="Full Name" required />
+            <input type="email" placeholder="Email" required />
+            <select required>
+                <option disabled selected>Select Activity</option>
+                <option>Banana Boat Ride</option>
+                <option>Sunset SUP Yoga</option>
+                <option>Walkboarding</option>
+                <option>Hydrofoiling</option>
+                <option>Jet Skiing</option>
+            </select>
+            <input type="text" id="date" placeholder="Select Date" required />
+            <input type="time" id="time" placeholder="Time" required />
+            <input type="text" id="promo" placeholder="Promo Code"/>
+            <button type="submit" class="btn">Submit</button>
+        </form>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="section animate">
+        <h2>Gallery</h2>
+        <div class="gallery">
+            <img src="image1.jpg" alt="Activity 1" />
+            <img src="image2.jpg" alt="Activity 2" />
+            <img src="image3.jpg" alt="Activity 3" />
+        </div>
+    </section>
+
+    <!-- Shop Section -->
+    <section id="shop" class="section animate">
+        <h2>Our Shop</h2>
+        <p>Grab our exclusive Mirissa Wave Co. merch to remember your adventure!</p>
+        <div class="shop-container">
+            <div class="shop-item">
+                <img src="images/tshirt.png" alt="Oversized T-Shirt" />
+                <h3>Oversized T-Shirt</h3>
+                <p>$25</p>
+                <button class="btn">Buy Now</button>
+            </div>
+            <div class="shop-item">
+                <img src="images/hat.png" alt="Bucket Hat" />
+                <h3>Bucket Hat</h3>
+                <p>$15</p>
+                <button class="btn">Buy Now</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section bg-secondary animate">
+        <h2>About Us</h2>
+        <p>
+            Mirissa Wave Co. is your go-to destination for aquatic thrills. Whether
+            you're riding the waves or meditating on the water, we ensure a safe,
+            fun, and unforgettable experience for all.
+        </p>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 Mirissa Wave Co. | Designed for thrill seekers</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
