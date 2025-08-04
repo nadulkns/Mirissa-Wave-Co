@@ -41,3 +41,23 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 });
+
+const videoContainer = document.getElementById('video-container');
+const thumbnail = document.getElementById('video-thumbnail');
+const playButton = document.getElementById('play-button');
+
+videoContainer.addEventListener('click', function () {
+  const iframe = document.createElement('iframe');
+  iframe.setAttribute('src', 'https://www.youtube.com/embed/3svsARFtKKI?autoplay=1&rel=0');
+  iframe.setAttribute('title', 'Mirissa Wave Co. Activities');
+  iframe.setAttribute('frameborder', '0');
+  iframe.setAttribute('allow', 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share');
+  iframe.setAttribute('allowfullscreen', '');
+  iframe.style.width = '100%';
+  iframe.style.height = '100%';
+  iframe.style.borderRadius = '12px';
+
+  videoContainer.innerHTML = ''; // Remove thumbnail + button
+  videoContainer.appendChild(iframe);
+});
+
