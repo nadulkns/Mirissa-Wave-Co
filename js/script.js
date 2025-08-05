@@ -69,4 +69,12 @@ hamburger.addEventListener('click', () => {
   navLinks.classList.toggle('show');
 });
 
+// Auto-close navbar when a link is clicked (for mobile)
+document.querySelectorAll('.nav-links a').forEach(link => {
+  link.addEventListener('click', () => {
+    navLinks.classList.remove('show');
+  });
+});
+
+
 
