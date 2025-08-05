@@ -473,3 +473,111 @@ p {
     width: 80%;
   }
 }
+
+/* ===================== */
+/* MORE RESPONSIVE MEDIA QUERIES */
+/* ===================== */
+
+/* Tablet Screens */
+@media (max-width: 1024px) and (min-width: 601px) {
+  .home-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .home-text h1 {
+    font-size: 2rem;
+  }
+
+  .activity-item,
+  .shop-item {
+    width: 180px;
+  }
+}
+
+/* Small Devices - Landscape */
+@media (max-width: 768px) {
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .nav-container {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .nav-title {
+    font-size: 1.4rem;
+  }
+
+  .home-text h1 {
+    font-size: 1.75rem;
+  }
+
+  .activity-container,
+  .shop-container {
+    gap: 1rem;
+  }
+}
+
+/* Very Small Devices (e.g. old phones) */
+@media (max-width: 400px) {
+  .nav-title {
+    font-size: 1.2rem;
+  }
+
+  .nav-links a {
+    font-size: 0.9rem;
+  }
+
+  .home-text h1 {
+    font-size: 1.2rem;
+  }
+
+  .home-text p {
+    font-size: 0.9rem;
+  }
+
+  .btn,
+  .btns {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .activity-item,
+  .shop-item {
+    width: 90%;
+  }
+}
+
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  color: var(--text-light);
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: var(--main-color);
+    padding: 1rem 0;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .nav-links li {
+    text-align: center;
+    width: 100%;
+  }
+}
+
