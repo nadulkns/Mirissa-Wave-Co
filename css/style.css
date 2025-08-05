@@ -580,3 +580,31 @@ p {
     width: 100%;
   }
 }
+
+/* ===================== */
+/* ENHANCED RESPONSIVE: Activities & Shop */
+/* ===================== */
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .activity-item,
+  .shop-item {
+    width: 200px;
+  }
+}
+
+/* Mid-sized devices */
+@media (max-width: 768px) {
+  .activity-item,
+  .shop-item {
+    width: 45%;
+  }
+}
+
+/* Phones */
+@media (max-width: 480px) {
+  .activity-item,
+  .shop-item {
+    width: 90%;
+  }
+}
