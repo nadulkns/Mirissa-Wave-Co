@@ -539,3 +539,48 @@ p {
   }
 }
 
+/* ===================== */
+/* RESPONSIVE IMAGES FOR ACTIVITY & SHOP */
+/* ===================== */
+
+.activity-item img,
+.shop-item img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: max-height 0.3s ease;
+  max-height: 180px;
+}
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .activity-item img,
+  .shop-item img {
+    max-height: 150px;
+  }
+}
+
+/* Mid-sized phones */
+@media (max-width: 768px) {
+  .activity-item img,
+  .shop-item img {
+    max-height: 130px;
+  }
+}
+
+/* Phones and small devices */
+@media (max-width: 480px) {
+  .activity-item img,
+  .shop-item img {
+    max-height: 110px;
+  }
+}
+
+/* Extra small phones */
+@media (max-width: 360px) {
+  .activity-item img,
+  .shop-item img {
+    max-height: 90px;
+  }
+}
