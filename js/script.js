@@ -48,7 +48,7 @@ const playButton = document.getElementById('play-button');
 
 videoContainer.addEventListener('click', function () {
   const iframe = document.createElement('iframe');
-  iframe.setAttribute('src', 'https://www.youtube.com/embed/3svsARFtKKI?autoplay=1&rel=0');
+  iframe.setAttribute('src', 'https://www.youtube.com/embed/p0jKEHdSo-Y?autoplay=1&rel=0');
   iframe.setAttribute('title', 'Mirissa Wave Co. Activities');
   iframe.setAttribute('frameborder', '0');
   iframe.setAttribute('allow', 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share');
